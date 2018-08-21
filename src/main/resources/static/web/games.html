@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battleship games Leaderboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/board_style.css">
+</head>
+<body>
+<h2>Games:</h2>
+
+<ol id="games" class=""list-group"">
+
+</ol>
+
+<div id="app" class="table-style">
+    <h2>Leader Board:</h2>
+    <table id="leader-board" class="table table-hover">
+        <thead class="titles thead-light ">
+            <tr>
+                <th scope="col">Username</th>
+                <th scope="col">Total</th>
+                <th scope="col">Wins</th>
+                <th scope="col">Losses</th>
+                <th scope="col">Ties</th>
+            </tr>
+        </thead>
+        <tbody class="scores" v-for="score in scores">
+            <tr>
+                <th scope="row">{{score.userName}}</th>
+                <td>{{score.total}}</td>
+                <td>{{score.wins}}</td>
+                <td>{{score.losses}}</td>
+                <td>{{score.ties}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="script/games.js"></script>
+</body>
+</html>

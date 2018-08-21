@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500');
+
+.head-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #EA6A00;
+    font-size: 30px;
+    text-shadow:5px 2px rgba(244, 201, 166, 0.8);
+    font-weight: bold;
+    margin: 20px;
+    padding: 5px;
+   padding-top: 10px;
+   margin-left: 30px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: solid 2px rgb(237, 223, 204);
+    justify-content: center
+}
+
+th {
+    width: 20px !important;
+    height: 20px !important;
+    background-color:transparent;
+    color: rgb(181, 192, 199);
+    text-align: center !important;
+}
+
+table.b-table {
+    display: -ms-grid;
+    border-collapse: collapse;
+    margin: 10px;
+}
+.ship-table, .salvo-table {
+    display:block;
+    float: left;
+    min-width:440px;
+}
+
+.salvo-table {
+    margin-left: 30px;
+}
+
+.ship-table {
+    margin-right: 30px;
+}
+
+.player-type, #my-name, #opponent-name {
+    font-family: 'Orbitron', sans-serif;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    vertical-align: -webkit-baseline-middle;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    color: transparent;
+}
+
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+  }
+  
+
+
+#container {
+    z-index: 5;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+  
+  /* ---- particles.js container ---- */
+canvas {
+    position: absolute;
+    display: block;
+    margin-top: -50%;
+    width: 100vw;
+    height: 100vh !important;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
+}
+
+  #particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 150vh;
+    /* background-color:""; */
+    background-image: 
+    linear-gradient(
+        to top right,
+        #2F56A3,rgb(154, 184, 245)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    z-index: 0;
+  }
+  
+header {
+    background-color: rgba(182, 189, 213,0.5) ;
+    /* opacity: 0.5; */
+    /* height: 60px; */
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    background-position-x: center;
+    margin-top: 30px;
+
+}
+
+.head-title, #ship-image {
+    display: inline-block;
+}
+
+#ship-image {
+    margin-top: -50px;
+    margin-left: 30px;
+}
+
+.row {
+  flex-wrap: nowrap !important;
+
+}
