@@ -18,7 +18,10 @@ public class SalvoController {
     @Autowired
     private GameRepository gameRepository;
 
-
+    /**
+     * This is called End Point
+     * @return
+     */
     @RequestMapping("/games")
     private List<GameVO> getIds () {
         return gameRepository

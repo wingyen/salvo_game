@@ -1,59 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Battleship</title>
-    <link rel="stylesheet" href="style/game_style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>Battleship</title>
+        <link rel="stylesheet" href="style/game_style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
 </head>
 
 <body>
-    
-  
-    <div id="container">
-    <div id="particles-js">    
-            <header>
-                    <div class="head-title"><h2>Battleship War</h2></div>
-                    <img id="ship-image" src="https://battleshiptexas.org/wp-content/themes/bsot/images/timeline/bb35.png" alt="" style="width: 300px;">             
-            </header>
-          <div class="row justify-content-center">
-                <div class="ship-table">
-                        <div class="player-type">
-                                Your Ship
-                              </div>
-                        <div id="my-name"></div>
-                        <table id="my-table" class="b-table">
-                                <thead id="ship-table-headers">
-                                </thead>
-                                <tbody id="ship-table-rows">
-                                </tbody>
-                        </table>
-                </div>
-        
-                <div class="salvo-table">
-                        <div class="player-type">
-                                Your Opponent
-                              </div>
-                        <div id="opponent-name"></div>
-                        <table id="oppo-table" class="b-table">
-                                <thead id="salvo-table-headers">
-                                </thead>
-                                <tbody id="salvo-table-rows">
-                                </tbody>
-                        </table>
+
+
+        <div id="container">
+                <div id="particles-js">
+                        <header>
+                                <div class="head-title">
+                                        <h2>Battleship War</h2>
+                                </div>
+                                <img id="ship-image" src="https://battleshiptexas.org/wp-content/themes/bsot/images/timeline/bb35.png" alt="" style="width: 300px;">
+                                <div>
+                                        <form th:action="@{/logout}" method="post">
+                                                <input type="submit" value="Sign Out" />
+                                        </form>
+                                </div>
+                        </header>
+                        <div class="row justify-content-center">
+                                <div class="ship-table">
+                                        <div class="player-type">
+                                                Your Ship
+                                        </div>
+                                        <div id="my-name"></div>
+                                        <table id="my-table" class="b-table">
+                                                <thead id="ship-table-headers">
+                                                </thead>
+                                                <tbody id="ship-table-rows">
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                                <div class="salvo-table">
+                                        <div class="player-type">
+                                                Your Opponent
+                                        </div>
+                                        <div id="opponent-name"></div>
+                                        <table id="oppo-table" class="b-table">
+                                                <thead id="salvo-table-headers">
+                                                </thead>
+                                                <tbody id="salvo-table-rows">
+                                                </tbody>
+                                        </table>
+                                </div>
+                        </div>
                 </div>
         </div>
-    </div>
-    </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <script src="script/game.js"></script>
+        <script src="script/game.js"></script>
 </body>
 
 </html>
